@@ -26,6 +26,10 @@
   },
   "dependencies": {"@paperclipai/adapter-utils":"2026.722.0","yaml":"2.9.0"},
   "devDependencies": {"@types/node":"22.20.1","typescript":"5.9.3","vitest":"4.1.10"},
+  "overrides": {"nanoid":"3.3.18"},
   "engines": {"node":">=22.13.0"},
-  "private": true
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
