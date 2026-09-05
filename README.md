@@ -4,7 +4,7 @@ ACP-first [Paperclip](https://github.com/paperclipai/paperclip) adapter for Kiro
 
 - Adapter type: `kiro_acp`
 - Display name: **Kiro ACP**
-- Package: `@mariocairone/paperclip-kiro-adapter` `0.1.0` (private)
+- Package: `@mariocairone/paperclip-kiro-adapter` `0.1.1` (public)
 - Execution: local Kiro CLI only; no remote Paperclip writes are performed by installation or environment checks
 
 ## Requirements
@@ -27,7 +27,7 @@ npm ci
 npm run build
 ```
 
-This package is private and is not intended for registry publication. Install a built checkout through Paperclip's local-adapter path when testing; this repository does not install itself into a live Paperclip instance.
+This package is published publicly on npm as `@mariocairone/paperclip-kiro-adapter`. A local checkout can also be installed through Paperclip's local-adapter path for development and validation.
 
 ## Architecture
 
