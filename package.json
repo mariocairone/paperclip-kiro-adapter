@@ -1,0 +1,31 @@
+{
+  "name": "@mariocairone/paperclip-kiro-adapter",
+  "version": "0.1.0",
+  "description": "ACP-first Paperclip adapter for Kiro CLI",
+  "type": "module",
+  "license": "MIT",
+  "author": "Mario Cairone",
+  "repository": {"type":"git","url":"git+https://github.com/mariocairone/paperclip-kiro-adapter.git"},
+  "bugs": {"url":"https://github.com/mariocairone/paperclip-kiro-adapter/issues"},
+  "homepage": "https://github.com/mariocairone/paperclip-kiro-adapter#readme",
+  "keywords": ["paperclip","kiro","acp","agent-client-protocol","adapter"],
+  "exports": {
+    ".": {"types":"./dist/index.d.ts","import":"./dist/index.js"},
+    "./server": {"types":"./dist/server/index.d.ts","import":"./dist/server/index.js"},
+    "./ui-parser": "./ui-parser.cjs"
+  },
+  "paperclip": {"adapterUiParser":"1.0.0"},
+  "files": ["dist","ui-parser.cjs","README.md","LICENSE","NOTICE"],
+  "scripts": {
+    "build":"tsc",
+    "dev":"tsc --watch",
+    "clean":"rm -rf dist",
+    "typecheck":"tsc --noEmit",
+    "test":"vitest run",
+    "prepack":"npm run build"
+  },
+  "dependencies": {"@paperclipai/adapter-utils":"2026.722.0","yaml":"2.9.0"},
+  "devDependencies": {"@types/node":"22.20.1","typescript":"5.9.3","vitest":"4.1.10"},
+  "engines": {"node":">=22.13.0"},
+  "private": true
+}

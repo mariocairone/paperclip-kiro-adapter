@@ -1,0 +1,7 @@
+This project is an independent ACP-first Paperclip adapter for Kiro CLI.
+
+Portions of the initial CLI adapter implementation were adapted from
+Schapat/paperclip-kiro-adapter (MIT, Copyright 2026 Patrick Scharnow).
+The public feat/acp-engine branch was used as a technical reference for Kiro ACP
+behavior, limitations, and compatibility tests. This repository has an
+independent Git history and is not affiliated with Paperclip Labs or Kiro.
